@@ -1,0 +1,451 @@
+*,
+::before,
+::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* Define fonts */
+h1 {
+  font-family: "Sacramento", "cursive";
+}
+h2 {
+  font-family: "Montserrat", "sans-serif";
+}
+p {
+  font-family: "Merriweather", "serif";
+}
+/* Define Colors */
+h1,
+h2 {
+  color: #66bfbf;
+}
+h3 {
+  color: #11999e;
+}
+button {
+  background-color: #11999e;
+}
+p {
+  color: #40514e;
+}
+.dots {
+  color: rgb(197, 194, 194);
+  font-size: 3.5rem;
+  margin: 3%;
+  letter-spacing: 5px;
+}
+.dots:hover {
+  cursor: progress;
+}
+.p-height {
+  line-height: 2rem;
+  font-family: "Merriweather", "serif";
+  font-weight: bolder;
+}
+/* Start f1p */
+.f1p {
+  height: 39.1rem;
+  background-color: #eaf6f6;
+  position: relative;
+}
+.cloud,
+.mountain,
+.headtitle h1,
+.headtitle h2 {
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+}
+.cloud {
+  max-width: 165px;
+}
+.One {
+  top: 8%;
+  right: 10%;
+}
+.Two {
+  top: 58%;
+  left: 10%;
+}
+.headtitle h1 {
+  top: 26%;
+  left: 38%;
+  font-size: 42px;
+}
+.headtitle h2 {
+  top: 42%;
+  left: 42%;
+  font-size: 32px;
+}
+.headtitle span {
+  color: rgb(199, 12, 12);
+}
+.mountain {
+  max-width: 33rem;
+  bottom: 0px;
+  left: 33%;
+}
+/* f1p Responsive */
+@media only screen and (max-width: 1200px) {
+  .f1p {
+    height: 38.8rem;
+  }
+  .headtitle h1 {
+    left: 33%;
+    color: rgb(0, 255, 21);
+  }
+  .headtitle h2 {
+    left: 40%;
+  }
+  .mountain {
+    width: 30rem;
+    left: 31%;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .f1p {
+    height: 38.7rem;
+  }
+  .headtitle h1 {
+    left: 30%;
+    color: red;
+  }
+  .headtitle h2 {
+    left: 35%;
+  }
+  .mountain {
+    width: 28rem;
+    left: 26%;
+  }
+}
+@media only screen and (max-width: 740px) {
+  .f1p {
+    height: 38.6rem;
+  }
+  .cloud {
+    width: 145px;
+  }
+  .One {
+    top: 5%;
+  }
+  .Two {
+    left: 5%;
+  }
+  .headtitle h1 {
+    color: rgb(112, 71, 226);
+    left: 26%;
+    font-size: 34px;
+  }
+  .headtitle h2 {
+    left: 34%;
+    font-size: 28px;
+  }
+  .mountain {
+    width: 25rem;
+    left: 20%;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .f1p {
+    height: 38.5rem;
+  }
+  .cloud {
+    width: 130px;
+  }
+  .headtitle h1 {
+    color: yellowgreen;
+    left: 23%;
+    font-size: 32px;
+  }
+  .headtitle h2 {
+    left: 29%;
+    font-size: 24px;
+  }
+  .mountain {
+    width: 22rem;
+    left: 14%;
+  }
+}
+@media only screen and (max-width: 365px) {
+  .f1p {
+    width: 100%;
+    height: 35rem;
+  }
+  .cloud {
+    width: 110px;
+  }
+  .headtitle h1 {
+    color: rgb(122, 37, 192);
+    left: 16%;
+  }
+  .headtitle h2 {
+    left: 28%;
+    font-size: 21px;
+  }
+  .mountain {
+    width: 16rem;
+    left: 13%;
+  }
+}
+/* End f1p */
+/* Profile Start */
+.profile {
+  text-align: center;
+  margin-top: 5rem;
+}
+.circle-img {
+  display: inline;
+  background-color: rgb(126, 123, 123);
+  border-radius: 50%;
+  padding: 5px;
+}
+.circle-img:hover {
+  background-color: rgb(107, 108, 110);
+}
+.profile img {
+  max-width: 180px;
+  max-height: 180px;
+  border-radius: 50%;
+}
+.profile h2 {
+  margin: 3%;
+  font-size: 36px;
+}
+
+@media only screen and (max-width: 760px) {
+  .profile {
+    margin: 5rem;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .profile {
+    margin: 5rem 2rem;
+  }
+  .profile img {
+    width: 160px;
+    height: 160px;
+  }
+  .profile h2 {
+    margin: 5%;
+    font-size: 30px;
+  }
+  .profile p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 365px) {
+  .profile {
+    margin: 5rem 2.5rem;
+  }
+  .profile img {
+    width: 130px;
+    height: 130px;
+  }
+  .profile h2 {
+    margin: 10% 0px;
+  }
+  .profile .text {
+    font-size: 12px;
+  }
+}
+/* Profile End */
+/* My Skills Start */
+.divSkill,
+.Contact {
+  text-align: center;
+}
+.divSkill h2,
+.Contact h2 {
+  font-size: 2rem;
+  margin: 2.5rem;
+}
+.my-skill {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto auto;
+}
+.skill {
+  margin: 25px;
+  text-align: justify;
+}
+.skill h3,
+.Contact h3 {
+  margin: 10px 0px;
+  font-size: 22px;
+}
+.skill img {
+  width: 140px;
+  height: 140px;
+}
+.OneS img {
+  float: left;
+  margin-right: 20px;
+}
+.TwoS img {
+  float: right;
+  margin-left: 20px;
+}
+.skill .p_height {
+  line-height: 1.5rem;
+}
+@media only screen and (max-width: 1200px) {
+  .my-skill {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .my-skill {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .my-skill {
+    width: 80%;
+  }
+  .skill h3,
+  .Contact h3 {
+    font-size: 20px;
+  }
+  .skill p,
+  .Contact p {
+    line-height: 1.5rem;
+    font-size: 14px;
+  }
+  .skill img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 365px) {
+  .my-skill {
+    width: 90%;
+  }
+  .skill h3,
+  .Contact h3 {
+    font-size: 16px;
+  }
+  .skill p,
+  .Contact p {
+    line-height: 1.5rem;
+    font-size: 11px;
+  }
+  .divSkill h2,
+  .Contact h2 {
+    font-size: 1.5rem;
+    margin: 1.4rem;
+  }
+}
+/* My Skills End */
+/* Fot Start */
+.Contact {
+  margin: 3rem auto;
+  max-width: 60%;
+}
+.Contact h2 {
+  margin: 3.5rem auto;
+}
+.Contact p {
+  margin: 2rem 0px;
+}
+button {
+  margin: 2rem 0px;
+  padding: 12px 15px;
+  color: whitesmoke;
+  border-radius: 0.5rem;
+  letter-spacing: 1.5px;
+  border: none;
+  text-shadow: rgb(55, 56, 56) 2px 0px;
+  box-shadow: rgb(75, 187, 187) 0px 2px 10px 2px;
+  transition: all 0.4s ease-out;
+}
+button:hover {
+  background: #66bfbf;
+  text-shadow: none;
+  font-size: 18px;
+  opacity: 80%;
+  cursor: help;
+}
+button,
+.footer {
+  font-size: 14px;
+}
+@media only screen and (max-width: 1200px) {
+  .Contact {
+    margin: 3rem auto;
+    max-width: 70%;
+  }
+}
+.circle-img,
+.footer ul a,
+.profile,
+.my-skill,
+.Contact {
+  transition: all 0.3s ease-out;
+}
+/* Fot End*/
+.footer {
+  height: 13rem;
+  background: #66bfbf;
+  color: white;
+  font-weight: bold;
+}
+.footer ul {
+  overflow: hidden;
+  width: 80%;
+  margin: auto auto;
+}
+.footer ul a {
+  height: 50px;
+  width: 20%;
+  display: inline-block;
+  margin: auto auto;
+}
+.footer ul,
+.footer p {
+  text-align: center;
+}
+.footer ul a img {
+  margin: 30px;
+  width: 50px;
+  height: 50px;
+}
+.footer ul a:hover {
+  transform: translateY(3px);
+  cursor: grabbing;
+  opacity: 80%;
+}
+.footer p {
+  margin-bottom: 1rem;
+}
+.footer p span {
+  color: rgb(48, 47, 47);
+  cursor: not-allowed;
+}
+@media only screen and (max-width: 365px) {
+  .footer {
+    height: 15rem;
+    background: #66bfbf;
+    color: white;
+    font-weight: bold;
+  }
+  .footer ul {
+    width: 100%;
+  }
+  .footer ul a {
+    height: 30px;
+    width: 25%;
+  }
+  .footer ul a img {
+    margin: 25px;
+    width: 35px;
+    height: 35px;
+  }
+  .footer p {
+    margin-bottom: -.5rem;
+    font-size: 12px;
+  }
+  div .dots {
+    font-size: 2.5rem;
+    margin: 3% auto;
+  }
+}
